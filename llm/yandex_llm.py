@@ -1,4 +1,5 @@
 import requests
+
 from .base_llm import BaseLLM
 
 
@@ -11,7 +12,7 @@ class YandexLLM(BaseLLM):
     def generate(self, prompt: str, context: str = "") -> str:
         headers = {
             "Authorization": f"Api-Key {self.api_key}",
-            "x-folder-id": self.folder_id
+            "x-folder-id": self.folder_id,
         }
 
         payload = {
@@ -19,14 +20,15 @@ class YandexLLM(BaseLLM):
             "messages": [
                 {
                     "role": "system",
-                    "text": "Ты аналитик данных. Отвечай точно, используя только предоставленные данные."
+                    "text": "Ты аналитик данных. Отвечай точно, "
+                    "используя только предоставленные данные.",
                 },
                 {
                     "role": "user",
-                    "text": f"{context}\n\nВопрос: {prompt}"
-                }
+                    "text": f"{context}\n\nВопрос: {prompt}",
+                },
             ],
-            "temperature": 0.3
+            "temperature": 0.3,
         }
 
         try:

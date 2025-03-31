@@ -1,6 +1,6 @@
+from .deepseek_llm import DeepSeekLLM
 from .ollama_llm import OllamaLLM
 from .yandex_llm import YandexLLM
-from .deepseek_llm import DeepSeekLLM
 
 
 def get_llm(model_type: str, **kwargs):

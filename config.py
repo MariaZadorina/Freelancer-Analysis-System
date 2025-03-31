@@ -1,5 +1,7 @@
 # Настройки Yandex Cloud
-YANDEX_API_KEY = "y0__xC5yM31BRjB3RMgj9_R1xKV7ASxVSRFiSaxcXNFa14WgK8sZQ"  # Получить в Yandex Cloud Console
+YANDEX_API_KEY = (
+    "y0__xC5yM31BRjB3RMgj9_R1xKV7ASxVSRFiSaxcXNFa14WgK8sZQ"  # Получить в Yandex Cloud Console
+)
 YANDEX_FOLDER_ID = "b1gnq4rs5cflkv9bdlbi"  # Идентификатор каталога
 YANDEX_CLOUD_ID = "b1gmtl8lb4v0dbct839d"
 

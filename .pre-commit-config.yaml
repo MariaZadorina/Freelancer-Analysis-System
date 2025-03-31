@@ -32,7 +32,7 @@ repos:
     rev: v0.0.269
     hooks:
     -   id: ruff
-#        args: ["--ignore=E501"]
+        args: ["--line-length=100"]  # Явно указываем длину строки
 -   repo: https://github.com/psf/black
     rev: 23.3.0
     hooks:
