@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "freelancers"
+version = "0.1.0"
+description = ""
+authors = ["Maria Zadorina <maria.zadorina@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.0"
+pandas = "^2.2.3"
+scikit-learn = "^1.6.1"
+requests = "^2.32.3"
+pre-commit = "^4.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
