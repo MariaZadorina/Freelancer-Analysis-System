@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 @dataclass
 class OllamaConfig:
     base_url: str = "http://localhost:11434"
-    timeout: int = 120  # seconds
+    timeout: int = 200  # seconds
     default_model: str = "llama3:latest"
 
 

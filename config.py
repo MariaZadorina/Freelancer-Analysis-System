@@ -1,12 +1,16 @@
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # Настройки Yandex Cloud
-YANDEX_API_KEY = (
-    "y0__xC5yM31BRjB3RMgj9_R1xKV7ASxVSRFiSaxcXNFa14WgK8sZQ"  # Получить в Yandex Cloud Console
-)
-YANDEX_FOLDER_ID = "b1gnq4rs5cflkv9bdlbi"  # Идентификатор каталога
-YANDEX_CLOUD_ID = "b1gmtl8lb4v0dbct839d"
+YANDEX_API_KEY = os.getenv("YANDEX_API_KEY")
+YANDEX_FOLDER_ID = os.getenv("YANDEX_FOLDER_ID")
+YANDEX_CLOUD_ID = os.getenv("YANDEX_CLOUD_ID")
 
 # Настройки Ollama
-OLLAMA_MODEL = "llama3"  # или "mistral", "gemma" и др.
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL")
 
 # Настройки DeepSeek
-DEEPSEEK_API_KEY = "sk-505ede24a91b4372ad6d15cc91b319ac"
+DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
